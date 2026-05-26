@@ -3,6 +3,8 @@
 
 Configurable weapon flag/charm attachment for FiveM. Works with QBox, QBCore, ESX, and standalone setups.
 
+# Buy Our Charms Here: https://popcornrp-store.tebex.io/category/weapons
+
 ## Features:
 
 - Multi-framework: QBox (`qbx_core`), QBCore (`qb-core`), ESX (`es_extended`), or standalone.
