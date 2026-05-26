@@ -3,7 +3,7 @@
 
 Configurable weapon flag/charm attachment for FiveM. Works with QBox, QBCore, ESX, and standalone setups.
 
-## Features
+## Features:
 
 - Multi-framework: QBox (`qbx_core`), QBCore (`qb-core`), ESX (`es_extended`), or standalone.
 - Flags exclusive to gang or jobs: being in the group is what unlocks the flag
@@ -17,14 +17,14 @@ Configurable weapon flag/charm attachment for FiveM. Works with QBox, QBCore, ES
 - Server export for auto-attach (PVP team systems, admin tools, etc.)
 - State-bag based sync: every client renders the prop on their own local weapon entity, so other players see it correctly
 
-## Installation
+## Installation:
 
 1. Drop `poprpguncharm` into your resources folder
 2. Ensure `ox_lib` is started before this resource
 3. `ensure poprpguncharm` in your `server.cfg` (or any other gun charm assets)
 4. `ensure poprpguncharms` in your `server.cfg`
 
-## Two modes
+## Two modes:
 
 **Restricted** (`Config.UnrestrictedCommandUse = false`, default)
 
@@ -41,7 +41,7 @@ Configurable weapon flag/charm attachment for FiveM. Works with QBox, QBCore, ES
 - Gang/job restrictions are bypassed entirely; keys in `Config.Flags` become arbitrary labels
 - Auto-populates 36 banner entries (`banner_01` … `banner_36`) where each entry intelligently uses the small flag prop on pistols/SMGs and the big flag prop on rifles+
 
-## Commands
+## Commands:
 
 | Command | Description |
 |---|---|
@@ -51,7 +51,7 @@ Configurable weapon flag/charm attachment for FiveM. Works with QBox, QBCore, ES
 
 Command names are configurable in `Config.Commands`; set any to `false` to disable.
 
-## Configuration
+## Configuration:
 
 Flags are keyed by gang/job name (restricted) or arbitrary label (unrestricted):
 
@@ -80,7 +80,7 @@ Config.Flags = {
 }
 ```
 
-Resolution priority (lowest → highest):
+Charm setting priority (lowest to highest):
 
 1. Flag top-level (`model`, `offset`, `rot`, `bone`)
 2. `Config.GlobalPerGroup[group]`
@@ -108,7 +108,7 @@ Config.GlobalPerWeapon = {
 }
 ```
 
-## Radial menus
+## Radial menus:
 
 Both ox_lib radial and qb-radialmenu are auto-detected. Whichever is running gets the entry. Set `Config.Radial.enabled = false` to disable.
 
@@ -143,7 +143,7 @@ Client-side export:
 |---|---|
 | `getFlag` | `flagId \| nil` (the local player's current flag) |
 
-## Notes on bones
+## Notes:
 
 `Config.DefaultBone = 'WAPClip'` (the magazine attachment point) works on most rifles, SMGs, and many pistols. Two other useful values:
 
