@@ -25,7 +25,3 @@ files {
     'client/framework.lua',
     'server/framework.lua',
 }
-
-dependencies {
-    'ox_lib',
-}
